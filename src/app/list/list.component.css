@@ -1,0 +1,23 @@
+
+/* Style the List */
+.header {
+    width: 300px;
+    height: 400px;
+    background-color: #e2e4e6;
+}
+
+.addCard{
+  position:relative;
+  border-radius: 0 0 3px 3px;
+  display: block;
+  flex: 0 0 auto;
+  padding: 8px 10px;
+  bottom: -20px;
+  left:10px;
+  }
+.addCard:hover {
+      -webkit-transform: scale(1.05);/*Grows in size like Angry Birds button*/
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+  }

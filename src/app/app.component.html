@@ -1,0 +1,19 @@
+<div class="lists">
+    <a>
+      <a *ngFor="let list of lists; let i = index"  >
+        <app-list title={{list.title}}
+                  id={{i+1}}>
+        </app-list>
+      </a>
+    </a>
+
+    <p></p>
+
+    <form #f="ngForm" (ngSubmit)="addList(f.value)">
+
+        <input type="text" name="title" placeholder="title" ngModel required><br>
+        <button type="submit"> Add a List... </button>
+
+    </form>
+
+</div>

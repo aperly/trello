@@ -1,0 +1,22 @@
+<div class="header">
+    <h2> {{ title }} ({{id}}) </h2>
+    <a>
+      <a *ngFor="let card of cards; let i = index"  >
+        <app-card title={{card.title}}
+                   details={{card.details}}
+                   id={{i+1}}>
+        </app-card>
+      </a>
+    </a>
+
+    <p></p>
+
+    <form #f="ngForm" (ngSubmit)="addCard(f.value)">
+
+        <input type="text" name="title" placeholder="title" ngModel required><br>
+        <input type="text" name="details" placeholder="details" ngModel required><br>
+        <button type="submit"> Add a card... </button>
+
+    </form>
+
+</div>
